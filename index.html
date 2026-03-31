@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YourName | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+  <!-- Matrix rain canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">&gt;_ <span class="accent">PORTFOLIO</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#workflow">WORKFLOW</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">bash — 80×24</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="prompt">root@system:~$</span> <span class="cmd">whoami</span></p>
+          <h1 class="hero-name glitch" data-text="YOUR NAME">YOUR NAME</h1>
+          <p class="terminal-line"><span class="prompt">root@system:~$</span> <span class="cmd">cat role.txt</span></p>
+          <p class="hero-role"><span class="typing-text" id="typing"></span><span class="cursor-blink">█</span></p>
+          <p class="terminal-line"><span class="prompt">root@system:~$</span> <span class="cmd">./start_journey.sh</span></p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">[VIEW PROJECTS]</a>
+            <a href="#contact" class="btn btn-outline">[HIRE ME]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">PROJECTS</span></div>
+      <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">TECHNOLOGIES</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">YEARS LEARNING</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2>ABOUT_ME<span class="accent">.exe</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card profile-card">
+        <div class="hex-frame">
+          <div class="hex-inner">
+            <span class="profile-icon">&#128100;</span>
+          </div>
+        </div>
+        <div class="status-badge">● ONLINE</div>
+      </div>
+      <div class="about-card about-text-card">
+        <div class="code-comment">/* Who am I? */</div>
+        <p>I'm a <span class="highlight">BCA student</span> passionate about building secure, scalable web applications. I love exploring the intersection of <span class="highlight">cybersecurity</span> and <span class="highlight">modern web development</span>.</p>
+        <p>Currently learning full-stack development with Node.js, React, and cloud deployment. Always curious, always building.</p>
+        <div class="about-details">
+          <div class="detail"><span class="detail-label">NAME:</span><span class="detail-value">Your Name</span></div>
+          <div class="detail"><span class="detail-label">DEGREE:</span><span class="detail-value">BCA (Pursuing)</span></div>
+          <div class="detail"><span class="detail-label">LOCATION:</span><span class="detail-value">India</span></div>
+          <div class="detail"><span class="detail-label">STATUS:</span><span class="detail-value accent">Open to Opportunities</span></div>
+        </div>
+        <a href="#" class="btn btn-primary" download>[ DOWNLOAD CV ]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2>SKILL_SET<span class="accent">.json</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3 class="cat-title">&lt;Frontend/&gt;</h3>
+        <div class="skill-bars">
+          <div class="skill-bar"><span>HTML5</span><div class="bar"><div class="bar-fill" data-width="90"></div></div><span class="pct">90%</span></div>
+          <div class="skill-bar"><span>CSS3</span><div class="bar"><div class="bar-fill" data-width="85"></div></div><span class="pct">85%</span></div>
+          <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-width="75"></div></div><span class="pct">75%</span></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">&lt;Backend/&gt;</h3>
+        <div class="skill-bars">
+          <div class="skill-bar"><span>Node.js</span><div class="bar"><div class="bar-fill" data-width="70"></div></div><span class="pct">70%</span></div>
+          <div class="skill-bar"><span>Express</span><div class="bar"><div class="bar-fill" data-width="65"></div></div><span class="pct">65%</span></div>
+          <div class="skill-bar"><span>PostgreSQL</span><div class="bar"><div class="bar-fill" data-width="60"></div></div><span class="pct">60%</span></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">&lt;DevOps/&gt;</h3>
+        <div class="skill-bars">
+          <div class="skill-bar"><span>Git / GitHub</span><div class="bar"><div class="bar-fill" data-width="80"></div></div><span class="pct">80%</span></div>
+          <div class="skill-bar"><span>CI/CD Actions</span><div class="bar"><div class="bar-fill" data-width="60"></div></div><span class="pct">60%</span></div>
+          <div class="skill-bar"><span>Docker</span><div class="bar"><div class="bar-fill" data-width="40"></div></div><span class="pct">40%</span></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">&lt;Tools/&gt;</h3>
+        <div class="tech-pills">
+          <span class="pill">VS Code</span><span class="pill">Postman</span><span class="pill">Linux</span>
+          <span class="pill">Render</span><span class="pill">GitHub Pages</span><span class="pill">npm</span>
+          <span class="pill">REST APIs</span><span class="pill">JSON</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2>PROJECTS<span class="accent">.log</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-id">#001</span>
+          <div class="project-links">
+            <a href="#" class="icon-link" title="GitHub">⌥ CODE</a>
+            <a href="#" class="icon-link accent" title="Live">▶ LIVE</a>
+          </div>
+        </div>
+        <h3 class="project-title">Portfolio Website</h3>
+        <p class="project-desc">Full-stack portfolio with CI/CD pipeline, GitHub Actions, and PostgreSQL contact form backend deployed on Render.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-id">#002</span>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥ CODE</a>
+            <a href="#" class="icon-link accent">▶ LIVE</a>
+          </div>
+        </div>
+        <h3 class="project-title">Task Manager App</h3>
+        <p class="project-desc">CRUD application with user authentication, RESTful API endpoints, and persistent database storage.</p>
+        <div class="project-tags">
+          <span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">REST API</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-id">#003</span>
+          <div class="project-links">
+            <a href="#" class="icon-link">⌥ CODE</a>
+            <a href="#" class="icon-link accent">▶ LIVE</a>
+          </div>
+        </div>
+        <h3 class="project-title">Weather Dashboard</h3>
+        <p class="project-desc">Real-time weather app consuming OpenWeather API with dynamic UI updates and geolocation support.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">CSS Grid</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WORKFLOW -->
+  <section id="workflow">
+    <div class="section-header">
+      <span class="section-tag">// 04</span>
+      <h2>DEV_WORKFLOW<span class="accent">.sh</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <p class="workflow-desc">My HOD's Modern Web Development pipeline — how code goes from my laptop to users worldwide.</p>
+    <div class="workflow-container">
+      <div class="workflow-step">
+        <div class="step-icon">💻</div>
+        <div class="step-content">
+          <h4>LOCAL GIT REPO</h4>
+          <p>Write code in VS Code, commit changes with Git version control</p>
+          <code>git commit -m "feat: add contact form"</code>
+        </div>
+      </div>
+      <div class="workflow-arrow">→</div>
+      <div class="workflow-step">
+        <div class="step-icon">🐙</div>
+        <div class="step-content">
+          <h4>GITHUB</h4>
+          <p>Push to remote repository, collaborate, track issues</p>
+          <code>git push origin main</code>
+        </div>
+      </div>
+      <div class="workflow-arrow">→</div>
+      <div class="workflow-step">
+        <div class="step-icon">⚙️</div>
+        <div class="step-content">
+          <h4>CI/CD PIPELINE</h4>
+          <p>GitHub Actions auto-runs tests, linting on every push</p>
+          <code>npm test &amp;&amp; npm run lint</code>
+        </div>
+      </div>
+      <div class="workflow-arrow">→</div>
+      <div class="workflow-step">
+        <div class="step-icon">☁️</div>
+        <div class="step-content">
+          <h4>HOSTING</h4>
+          <p>Frontend → GitHub Pages | Backend+DB → Render.com</p>
+          <code>Auto-deploy on merge</code>
+        </div>
+      </div>
+      <div class="workflow-arrow">→</div>
+      <div class="workflow-step">
+        <div class="step-icon">🌐</div>
+        <div class="step-content">
+          <h4>WEB BROWSER</h4>
+          <p>Users access the live site from anywhere in the world</p>
+          <code>https://yourname.github.io</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-tag">// 05</span>
+      <h2>CONTACT<span class="accent">.php</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>ESTABLISH_CONNECTION</h3>
+        <p>Got a project, opportunity, or just want to talk tech? My inbox is always open.</p>
+        <div class="contact-links">
+          <a href="mailto:you@email.com" class="contact-link">📧 you@email.com</a>
+          <a href="https://github.com/yourusername" class="contact-link">🐙 github.com/yourusername</a>
+          <a href="https://linkedin.com/in/yourusername" class="contact-link">💼 linkedin.com/in/yourusername</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form id="contactForm">
+          <div class="form-group">
+            <label>NAME:</label>
+            <input type="text" name="name" id="nameInput" placeholder="John Doe" required/>
+          </div>
+          <div class="form-group">
+            <label>EMAIL:</label>
+            <input type="email" name="email" id="emailInput" placeholder="john@example.com" required/>
+          </div>
+          <div class="form-group">
+            <label>MESSAGE:</label>
+            <textarea name="message" id="messageInput" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">[ TRANSMIT MESSAGE ]</button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">
+      &gt;_ Designed &amp; Built by <span class="accent">Your Name</span> | BCA Student
+    </p>
+    <p class="footer-sub">Local Git → GitHub → CI/CD → Hosted → You're here ✓</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

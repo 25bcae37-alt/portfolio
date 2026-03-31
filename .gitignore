@@ -1,0 +1,29 @@
+# ===========================
+# .gitignore
+# Files NOT to upload to GitHub
+# ===========================
+
+# Environment variables (NEVER share these!)
+.env
+.env.local
+.env.production
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code settings (optional - remove if you want to share these)
+.vscode/settings.json
+
+# Logs
+logs/
+*.log
+
+# Build output
+dist/
+build/
