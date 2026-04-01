@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
 // 🔧 CHANGE THIS to your deployed Render backend URL later!
-const BACKEND_URL = "https://your-backend.onrender.com";
+const BACKEND_URL = "https://portfolio-backend-3ovz.onrender.com";
 
 // ===== MATRIX RAIN =====
 (function initMatrix() {
